@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GappleOS</title>
+    <meta name="description" content="A decoy OS built with Pure html,css,js">
+    <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/813079425029242910/935942779891228702/logo.png?width=334&height=334">
+    <meta name="theme-color" content="#1d89e0">
+    <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/898184228238397500/936148441313189898/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader_bg">
+        <div class="loader">
+            <div class="color"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 3000);
+    </script>
+    <div class="main">
+        <img class="fold" src="assets/fold.svg" width="40">
+        <p><b>File</b></p>
+    </div>
+    <div class="taskbar">
+        <img class="mtask" src="assets/logo.png" width="35">
+        <img class="term" src="assets/code.svg" width="35">
+        <img src="assets/photo.svg" width="35">
+        <img src="assets/calc.svg" width="35">
+        <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-status/512/dialog-error-icon.png" width="35">
+        <img class="right" src="assets/right.png" alt="" width="120">
+    </div>
+    <div class="startmenu">
+        <img src="assets/startmenu.PNG" alt="">
+    </div>
+    <div class="xp">
+        <img src="assets/fold.png" alt="">
+    </div>
+    <div class="trash">
+        <img src="assets/trash.svg" alt="">
+        <p><b>Trash</p>
+    </div>
+    <div class="trashfold">
+        <img src="assets/trashfold.png" alt="">
+    </div>
+    <div class="mobile">
+        <div class="search">
+            <input type="text" placeholder="Search Web">
+        </div>
+        <div class="time">
+            <h2 id='date'></h2>
+            <h1 id='txt'></h1>
+        </div>
+        <div class="noti">
+            <div class="drive">
+                <h3>💻 Desire Drive</h3>
+                <p>Your Device is running low on storage! It's time for a reset!</p>
+            </div>
+            <div class="media">
+                <h3>🌌 Gapple Media</h3>
+                <p>You have reached 1k Followers! Congrats on the milestone!</p>
+            </div>
+        </div>
+        <div class="menu">
+            <img class="arrow" src="assets/arrow.svg" width="35" height="35">
+            <img class="mtask" src="assets/home.svg" width="35" height="35">
+            <img class="back" src="assets/history.svg" width="35" height="35">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="time.js"></script>
+</html>
